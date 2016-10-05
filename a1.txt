@@ -1,0 +1,36 @@
+#include<iostream.h>
+#include<stdio.h>
+
+struct books
+{
+    char name[20],author[20];
+}a[50];
+int main()
+{
+    
+    int i,n;
+    cout<<"No Of Books[less than 50]:";
+    cin>>n;
+ cout<<"Enter the book details\n";
+ cout<<"----------------------\n";
+    
+    for(i=0;i<n;i++)
+    {
+  cout<<"Details of Book No "<<i+1<<"\n";
+  cout<<"Book Name :";
+  cin>>a[i].name;
+  cout<<"Book Author :";
+  cin>>a[i].author;
+  cout<<"----------------------\n";
+    }
+    cout<<"================================================\n";
+    cout<<" S.No\t| Book Name\t|author\n";
+    cout<<"=====================================================";
+    for(i=0;i<n;i++)
+    {
+  cout<<"\n  "<<i+1<<"\t|"<<a[i].name<<"\t| "<<a[i].author;
+    }
+    cout<<"\n=================================================";
+    
+    return 0;
+}
